@@ -1,1 +1,27 @@
-{{outlet}}
+<h1>Manage events</h1>
+<div class="ui fluid pointing secondary menu">
+    {{#link-to 'events.live' class="item" data-tab="first"}}
+        Live
+    {{/link-to}}
+    {{#link-to 'events.draft' class="item" data-tab="second"}}
+        Draft
+    {{/link-to}}
+    {{#link-to 'events.past' class="item" data-tab="third"}}
+        Past
+    {{/link-to}}
+    {{#link-to 'events.import' class="item" data-tab="fourth"}}
+        import
+    {{/link-to}}
+</div>
+{{#link-to 'events.live' class="ui tab segment" data-tab="first" tagName="div"}}
+    {{outlet}}
+{{/link-to}}
+{{#link-to 'events.draft' class="ui tab segment" data-tab="second" tagName="div"}}
+    {{outlet}}
+{{/link-to}}
+{{#link-to 'events.past' class="ui tab segment" data-tab="third" tagName="div"}}
+    {{outlet}}
+{{/link-to}}
+{{#link-to 'events.import' class="ui tab segment" data-tab="fourth" tagName="div"}}
+    {{outlet}}
+{{/link-to}}
