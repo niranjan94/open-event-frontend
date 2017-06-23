@@ -4,3 +4,4 @@ window.deprecationWorkflow.config = {
     { handler: 'silence', matchId: 'ember-router.router' }
   ]
 };
+ 
